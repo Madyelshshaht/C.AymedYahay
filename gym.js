@@ -1,3 +1,11 @@
+var typed = new Typed('.multiple-text', {
+    strings: ['Ahmed Yahya ', 'Certified Personal Training' ],
+    typeSpeed: 50,
+    backSpeed: 50,
+    typeDelay: 50,
+    loop:true
+});
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     loop: true,
@@ -46,3 +54,4 @@ var swiper = new Swiper(".mySwipercomments", {
         }
     }
 });
+
