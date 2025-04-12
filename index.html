@@ -23,85 +23,103 @@
       </button>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <img src="assets/logo.png" alt="logo" style="width: 130px;">
+          <a class="navbar-brand" href="#" style="--i:1;">Leopard</a>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
               class="fa-solid iconf fa-x"></i></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body d-lg-flex justify-gl-content-between  align-lg-items-center gap-3">
           <ul class="navbar-nav justify-content-end flex-grow-1 gap-lg-5 pe-3 mt-1">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home" style="--i:2;">Home</a>
+              <a id="nav_Home" class="nav-link active" aria-current="page" href="#Home" style="--i:2;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Program" style="--i:3;">Program</a>
+              <a id="nav_Program" class="nav-link active" aria-current="page" href="#Program" style="--i:3;">Program</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Service" style="--i:4;">Service</a>
+              <a id="nav_Service" class="nav-link active" aria-current="page" href="#Service" style="--i:4;">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#About" style="--i:5;">About</a>
+              <a id="nav_About" class="nav-link active" aria-current="page" href="#About" style="--i:5;">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Comunnity" style="--i:6;">Comunnity</a>
+              <a id="nav_Community" class="nav-link active" aria-current="page" href="#Comunnity"
+                style="--i:6;">Community</a>
             </li>
           </ul>
+
+
+          <select class="langs" name="langs" id="langs" style="--i:7;">
+            <option value="en" selected>English</option>
+            <option value="ar">العربية</option>
+          </select>
+
         </div>
       </div>
     </div>
   </nav>
 
-  <header class="section__container header__container container" id="Home">
-    <div class="header__content">
-      <span class="bg__blur"></span>
-      <span class="bg__blur header__blur"></span>
-      <h4>BEST FITNESS IN THE TOWN</h4>
-      <span class="coach d-flex align-items-center">
-        <h1><span>COACH</span> </h1>
-        <svg class="dumbl" width="120px" height="177px" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
-          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#d79447" stroke="#d79447"
-          stroke-width="1.152">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-            stroke-width="0.128">
-            <g id="icomoon-ignore"> </g>
-            <path
-              d="M32 15.467h-3.147v-6.4h-3.2v-2.667h-4.267v9.067h-10.667v-9.067h-4.267v2.667h-3.2v6.4h-3.253v1.067h3.253v6.4h3.2v2.667h4.267v-9.067h10.667v9.067h4.267v-2.667h3.2v-6.4h3.147v-1.067zM4.32 21.867v-11.733h2.133v11.733h-2.133zM9.653 24.533h-2.133v-17.067h2.133v17.067zM24.587 24.533h-2.133v-17.067h2.133v17.067zM27.787 21.867h-2.133v-11.733h2.133v11.733z"
-              fill="#000000"> </path>
-          </g>
-          <g id="SVGRepo_iconCarrier">
-            <g id="icomoon-ignore"> </g>
-            <path
-              d="M32 15.467h-3.147v-6.4h-3.2v-2.667h-4.267v9.067h-10.667v-9.067h-4.267v2.667h-3.2v6.4h-3.253v1.067h3.253v6.4h3.2v2.667h4.267v-9.067h10.667v9.067h4.267v-2.667h3.2v-6.4h3.147v-1.067zM4.32 21.867v-11.733h2.133v11.733h-2.133zM9.653 24.533h-2.133v-17.067h2.133v17.067zM24.587 24.533h-2.133v-17.067h2.133v17.067zM27.787 21.867h-2.133v-11.733h2.133v11.733z"
-              fill="#000000"> </path>
-          </g>
-        </svg>
-      </span>
-      <!-- <h1 class="name "></h1> -->
-      <h2> <span class="name multiple-text fw-bold"> </span></h2>
-      <p>
+  <header class="section__container header__container container py-5 overflow-sm-hidden" id="Home" >
+    <div class="header__content pt-sm-5">
+      <span class="bg__blur header__blur1"></span>
+      <span class="bg__blur header__blur2"></span>
+
+      <h4 id="header_title">BEST FITNESS IN THE TOWN</h4>
+
+      <div>
+        <span class="coach d-flex align-items-center">
+          <h1><span id="header_coach">COACH</span></h1>
+
+          <!-- Icon SVG كما هو -->
+          <!-- ... -->
+        </span>
+      </div>
+
+      <h2><span class="name multiple-text fw-bold"></span></h2>
+
+      <p id="header_description">
         Unleash your potential and embark on a journey towards a stronger,
         fitter, and more confident you. Sign up for Make Your Body Shape now
         and witness the incredible transformation your body is capable of!
       </p>
 
       <div class="footer__socials mt-1">
-        <a href="#" style="--i:7"><i class="ri-facebook-fill"></i></a>
-        <a href="#" style="--i:8"><i class="ri-instagram-line"></i></a>
-        <a href="#" style="--i:9"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" style="--i:8"><i class="ri-facebook-fill"></i></a>
+        <a href="#" style="--i:9"><i class="ri-instagram-line"></i></a>
+        <a href="#" style="--i:10"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://wa.me/+2001032329424" target="_blank" style="--i:10"><i class="ri-whatsapp-fill"></i></a>
       </div>
-      <button class="btn mt-4">Get Started</button>
+
+      <button class="btn mt-4" id="header_button">Get Started</button>
     </div>
-    <div class="header__image">
-      <img class="img-fluid" src="assets/header.png" alt="header" />
+
+    <div class="header__image pb-5 ">
+      <!-- <img class="img-fluid" src="assets/Captin2.png" alt="header" /> -->
+      <img class="img-fluid" src="assets/c.a2234.png" alt="header" />
     </div>
   </header>
 
+  <!-- Certificate -->
 
-  <section class="section__container explore__container" id="Program">
+  <div class="certifcate container pt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <img class="img-fluid" src="assets/certficate.png" alt="">
+      </div>
+      <div
+        class="content col-lg-6 col-md-6 col-sm-12 text-white d-flex  justify-content-center align-items-center flex-column fw-semibold text-uppercase">
+        <p>InterNattional</p>
+        <p> Sports Sciences </p>
+        <p>Association</p>
+      </div>
 
-    <div class="explore__header">
-      <h2 class="section__header w-100">EXPLORE OUR PROGRAM</h2>
+    </div>
+  </div>
+
+
+  <section class="section__container explore__container overflow-hidden" id="Program">
+
+    <div class="explore__header pt-5">
+      <h2 class="section__header w-100 pt-5 pb-5" id="Eplore_title">EXPLORE OUR PROGRAM</h2>
     </div>
     <div class="container swiper mySwiper">
 
@@ -109,46 +127,45 @@
         <div class="swiper-slide">
           <div class="explore__card">
             <span><i class="ri-boxing-fill"></i></span>
-            <h4>Strength</h4>
-            <p>
+            <h4 id="Eplore_programs_title1">Strength</h4>
+            <p id="Eplore_programs_desc1">
               Embrace the essence of strength as we delve into its various
               dimensions physical, mental, and emotional.
             </p>
-            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            <a href="#" id="Eplore_programs_btn1">Join Now <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="explore__card">
             <span><i class="ri-heart-pulse-fill"></i></span>
-            <h4>Physical Fitness</h4>
-            <p>
+            <h4 id="Eplore_programs_title2">Physical Fitness</h4>
+            <p id="Eplore_programs_desc2">
               It encompasses a range of activities that improve health, strength,
               flexibility, and overall well-being.
             </p>
-            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            <a href="#" id="Eplore_programs_btn2">Join Now <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="explore__card">
             <span><i class="ri-run-line"></i></span>
-            <h4>Fat Lose</h4>
-            <p>
+            <h4 id="Eplore_programs_title3">Fat Lose</h4>
+            <p id="Eplore_programs_desc3">
               Through a combination of workout routines and expert guidance, we'll
               empower you to reach your goals.
             </p>
-            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            <a href="#" id="Eplore_programs_btn3">Join Now <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="explore__card">
             <span><i class="ri-shopping-basket-fill"></i></span>
-            <h4>Weight Gain</h4>
-            <p>
-
+            <h4 id="Eplore_programs_title4">Weight Gain</h4>
+            <p id="Eplore_programs_desc4">
               Designed for individuals, our program offers an effective approach
               to gaining weight in a sustainable manner.
             </p>
-            <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+            <a href="#" id="Eplore_programs_btn4">Join Now <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </div>
@@ -160,14 +177,14 @@
 
 
   <section class="section__container class__container" id="Service">
-    <div class="class__image">
+    <div class="class__image ">
       <span class="bg__blur"></span>
-      <img src="assets/class-1.jpg" alt="class" class="class__img-1" />
-      <img src="assets/class-2.jpg" alt="class" class="class__img-2" />
+      <img src="assets/gym/6.jpg" alt="class" class="class__img-1" />
+      <img src="assets/gym/4.jpg" alt="class" class="class__img-2" />
     </div>
     <div class="class__content">
-      <h2 class="section__header">THE CLASS YOU WILL GET HERE</h2>
-      <p>
+      <h2 class="section__header pb-3" id="class_title">THE CLASS YOU WILL GET HERE</h2>
+      <p id="class_desc">
         Led by our team of expert and motivational instructors, "The Class You
         Will Get Here" is a high-energy, results-driven session that combines
         a perfect blend of cardio, strength training, and functional
@@ -175,18 +192,19 @@
         challenged, ensuring you never hit a plateau in your fitness
         endeavors.
       </p>
-      <button class="btn">Book A Class</button>
+      <button class="btn" id="class_btn">Book A Class</button>
     </div>
   </section>
 
-  <section class="section__container join__container" id="About">
-    <h2 class="section__header">WHY JOIN US ?</h2>
-    <p class="section__subheader">
+  <section class="section__container join__container " id="About">
+    <h2 class="section__header" id="join_title">? WHY JOIN US </h2>
+    <p class="section__subheader" id="join_subtitle">
       Our diverse membership base creates a friendly and supportive
       atmosphere, where you can make friends and stay motivated.
     </p>
-    <div class="join__image">
-      <img src="assets/join.jpg" alt="Join" />
+    <div class="join__image ">
+      <!-- <img src="assets/join.jpg" alt="Join" /> -->
+      <img src="assets/gym/16.jpeg" alt="Join" />
       <div class="join__grid">
         <div class="join__card">
           <span><i class="ri-user-star-fill"></i></span>
@@ -213,78 +231,186 @@
     </div>
   </section>
 
+
+  <div class="myWork container  pt-5">
+    <!-- <h1 class="text-center text-white pt-5">My Works</h1> -->
+    <h1 class="text-center text-white pt-5 pb-1" id="work_title">Before & After</h1>
+    <!-- <h2 class="text-center text-white pt-2 pb-2"> Transformations that speak louder than words </h2> -->
+    <div class="subtitle d-flex justify-content-center align-items-center">
+      <h2 class="text-center text-white pt-2 pb-2" id="work_sub_title"> Every body tells a story — here are ours </h2>
+      <img class="helth_img" src="assets/healthy.png" alt="">
+    </div>
+
+    <p class="text-white-50 text-center desc pt-2" id="work_desc">Heres a glimpse of the real impact — these are actual
+      results from clients
+      who committed to their fitness journey. With the right guidance, consistency, and personalized plans, achieving
+      your dream physique isn't just possible — it's inevitable. See the difference for yourself.</p>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/works/SaadB_Face.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/Saad_Back B.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/Saad After 2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/Saad After 3.jpg" alt=""></div>
+
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Saad</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/works/aboAlaaB.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/AboAllB Back.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/AboAll after.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/Abo All After Back.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+
+        </div>
+        <h2 class="text-white text-center pt-3">Abo Alla</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="assets/works/ahemdB.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/ahemdF2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/ahmedF.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Ahemd Esmail</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="assets/works/esmail.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/esmail1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/esmail2.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Ahemd Esmail</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="assets/works/person_face.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/person_back.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/person_side.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/person_after.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Ahemd Esmail</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="assets/works/before.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/after.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/after2.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Ahemd Esmail</h2>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  p-4">
+        <div class="swiper mySwiperworks1">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="assets/works/w1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/w2.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination "></div>
+        </div>
+        <h2 class="text-white text-center pt-3">Ahemd Esmail</h2>
+      </div>
+
+    </div>
+  </div>
+
+
   <section class="section__container price__container">
-    <h2 class="section__header">OUR PRICING PLAN</h2>
-    <p class="section__subheader">
+    <h2 class="section__header" id="price_title">OUR PRICING PLAN</h2>
+    <p class="section__subheader" id="price_desc">
       Our pricing plan comes with various membership tiers, each tailored to
       cater to different preferences and fitness aspirations.
     </p>
     <div class="price__grid">
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Basic Plan</h4>
-          <h3>$16</h3>
-          <p>
+          <h4 id="plan_id1">Basic Plan</h4>
+          <h3 id="plan_price1">$16</h3>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            Smart workout plan
-          </p>
-          <p>
+            <p id="plan_feature11"> Smart workout plan</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            At home workouts
-          </p>
+            <p id="plan_feature12"> At home workouts </p>
+          </span>
         </div>
-        <button class="btn price__btn">Join Now</button>
+        <button class="btn price__btn" id="plan_btn1">Join Now</button>
       </div>
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Weekly Plan</h4>
-          <h3>$25</h3>
-          <p>
+          <h4 id="plan_id2">Weekly Plan</h4>
+          <h3 id="plan_price2">$25</h3>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            PRO Gyms
-          </p>
-          <p>
+            <p id="plan_feature21">PRO Gyms</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            Smart workout plan
-          </p>
-          <p>
+            <p id="plan_feature22">Smart workout plan</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            At home workouts
-          </p>
+            <p id="plan_feature23">At home workouts</p>
+          </span>
         </div>
-        <button class="btn price__btn">Join Now</button>
+        <button class="btn price__btn" id="plan_btn2">Join Now</button>
       </div>
       <div class="price__card">
         <div class="price__card__content">
-          <h4>Monthly Plan</h4>
-          <h3>$45</h3>
-          <p>
+          <h4 id="plan_id3">Monthly Plan</h4>
+          <h3 id="plan_price3">$45</h3>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            ELITE Gyms & Classes
-          </p>
-          <p>
+            <p id="plan_feature31"> ELITE Gyms & Classes</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            PRO Gyms
-          </p>
-          <p>
+            <p id="plan_feature32"> PRO Gyms</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            Smart workout plan
-          </p>
-          <p>
+            <p id="plan_feature33"> Smart workout plan</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            At home workouts
-          </p>
-          <p>
+            <p id="plan_feature34">At home workouts</p>
+          </span>
+          <span>
             <i class="ri-checkbox-circle-line"></i>
-            Personal Training
-          </p>
+            <p id="plan_feature35"> Personal Training</p>
+          </span>
         </div>
-        <button class="btn price__btn">Join Now</button>
+        <button class="btn price__btn" id="plan_btn3">Join Now</button>
       </div>
     </div>
   </section>
 
-  <section class="review swiper mySwipercomments p-0" id="Comunnity">
+  <!-- <section class="review swiper mySwipercomments p-0 overflow-hidden" id="Comunnity">
     <div class="swiper-wrapper">
 
       <div class="section__container review__container  swiper-slide">
@@ -410,17 +536,17 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
-  <footer class="section__container footer__container p-5">
-    <span class="bg__blur"></span>
-    <span class="bg__blur footer__blur"></span>
+  <footer class="section__container footer__container p-5 overflow-sm-hidden">
+    <span class="bg__blur footer__blur1"></span>
+    <span class="bg__blur footer__blur2"></span>
     <div class="footer__row row ">
 
 
       <div class="footer__col col-lg-3 col-md-4 col-sm-12 mb-5">
         <div class="footer__logo">Leopard</div>
-        <p>
+        <p id="footer_brand_desc">
           Take the first step towards a healthier, stronger you with our
           unbeatable pricing plans. Let's sweat, achieve, and conquer together!
         </p>
@@ -434,8 +560,8 @@
       </div>
 
       <div class="links col-lg-3 col-md-4 col-sm-12 mb-5">
-        <h5>Contact</h5>
-        <ul class="d-flex flex-column gap-2">
+        <h5 id="footer_contact_title">Contact</h5>
+        <ul class="d-flex flex-column gap-2" id="footer_contact_items">
           <li class="nav-item">
             <a href="#">Contact Us</a>
           </li>
@@ -453,8 +579,8 @@
 
 
       <div class="links col-lg-3 col-md-4 col-sm-12 mb-5">
-        <h5>Links</h5>
-        <ul class="d-flex flex-column gap-2">
+        <h5 id="footer_links_title">Links</h5>
+        <ul class="d-flex flex-column gap-2" id="footer_links_items">
           <li class="nav-item">
             <a class=" active" aria-current="page" href="#Home" style="--i:2;">Home</a>
           </li>
@@ -476,18 +602,18 @@
 
 
       <div class="feedback col-lg-3 col-md-4 col-sm-12 mb-5">
-        <h5 class="">FeedBack</h5>
-        <p class="text-white">I hope to write your opinion and get your feedback</p>
+        <h5 class="" id="footer_feedback_title">FeedBack</h5>
+        <p class="text-white" id="footer_feedback_desc">I hope to write your opinion and get your feedback</p>
         <div class="email d-flex  align-items-center gap-2">
-          <input type="text" placeholder="Enter Your FeedBack" class="feedback-email" />
-          <button class="feedback-btn  btn-outline-success fw-bold">Send</button>
+          <input type="text" placeholder="Enter Your FeedBack" class="feedback-email" id="footer_feedback_input" />
+          <button class="feedback-btn  btn-outline-success fw-bold" id="footer_feedback_button">Send</button>
         </div>
       </div>
     </div>
 
   </footer>
 
-  <div class="footer__bar fw-bold text-center">
+  <div class="section__container footer__bar fw-bold text-center" id="footer_copyright">
     Copyright © 2024 Ahmed Yahya. OnlineTrainging
   </div>
 

@@ -1,0 +1,163 @@
+{
+    "nav_Home": "Home",
+    "nav_Program": "Program",
+    "nav_Service": "Service",
+    "nav_About": "About",
+    "nav_Community": "Community",
+    "/Header/": "Header//////////////////////////////////",
+    "header_title": "Best Fitness in the Town",
+    "header_coach": "Coach",
+    "header_description": "Unleash your potential and embark on a journey towards a stronger, fitter, and more confident you. Sign up for Make Your Body Shape now and witness the incredible transformation your body is capable of!",
+    "header_button": "Get Started",
+    "Eplore": "Explore ////////////////////////////////////////////",
+    "Eplore_title": "EXPLORE OUR PROGRAM",
+    "Eplore_programs": [
+        {
+            "title": "Strength",
+            "description": "Embrace the essence of strength as we delve into its various dimensions: physical, mental, and emotional.",
+            "btn": "Join Now "
+        },
+        {
+            "title": "Physical Fitness",
+            "description": "It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.",
+            "btn": "Join Now "
+        },
+        {
+            "title": "Fat Loss",
+            "description": "Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.",
+            "btn": "Join Now "
+        },
+        {
+            "title": "Weight Gain",
+            "description": "Designed for individuals, our program offers an effective approach to gaining weight in a sustainable manner.",
+            "btn": "Join Now "
+        }
+    ],
+    "class_section": {
+        "title": "THE CLASS YOU WILL GET HERE",
+        "description": "Led by our team of expert and motivational instructors, 'The Class You Will Get Here' is a high-energy, results-driven session that combines a perfect blend of cardio, strength training, and functional exercises. Each class is carefully curated to keep you engaged and challenged, ensuring you never hit a plateau in your fitness endeavors.",
+        "btn": "Book A Class"
+    },
+    "why_join_us": {
+        "title": "WHY JOIN US ?",
+        "subtitle": "Our diverse membership base creates a friendly and supportive atmosphere, where you can make friends and stay motivated",
+        "features": [
+            {
+                "title": "Good Management",
+                "description": "Supportive management, for your fitness success"
+            },
+            {
+                "title": "Practice Sessions",
+                "description": "Elevate your fitness with practice sessions"
+            },
+            {
+                "title": "Personal Trainer",
+                "description": "Unlock your potential with our expert Personal Trainers"
+            }
+        ]
+    },
+    "pricing": {
+        "title": "OUR PRICING PLAN",
+        "description": "Our pricing plan comes with various membership tiers, each tailored to cater to different preferences and fitness aspirations",
+        "plans": [
+            {
+                "name": "Basic Plan",
+                "price": "$16",
+                "features": [
+                    {
+                        "name": "Smart workout plan",
+                        "included": true
+                    },
+                    {
+                        "name": "At home workouts",
+                        "included": true
+                    }
+                ],
+                "btn": "Join Now"
+            },
+            {
+                "name": "Weekly Plan",
+                "price": "$25",
+                "features": [
+                    {
+                        "name": "PRO Gyms",
+                        "included": true
+                    },
+                    {
+                        "name": "Smart workout plan",
+                        "included": true
+                    },
+                    {
+                        "name": "At home workouts",
+                        "included": true
+                    }
+                ],
+                "btn": "Join Now"
+            },
+            {
+                "name": "Monthly Plan",
+                "price": "$45",
+                "features": [
+                    {
+                        "name": "ELITE Gyms & Classes",
+                        "included": false
+                    },
+                    {
+                        "name": "PRO Gyms",
+                        "included": true
+                    },
+                    {
+                        "name": "Smart workout plan",
+                        "included": false
+                    },
+                    {
+                        "name": "At home workouts",
+                        "included": true
+                    },
+                    {
+                        "name": "Personal Training",
+                        "included": true
+                    }
+                ],
+                "btn": "Join Now"
+            }
+        ]
+    },
+    "work": {
+        "title": "Before & After",
+        "hook": "Every body tells a story — here are ours",
+        "description": "Here’s a glimpse of the real impact — these are actual results from clients who committed to their fitness journey. With the right guidance, consistency, and personalized plans, achieving your dream physique isn't just possible — it's inevitable. See the difference for yourself."
+    },
+    "footer": {
+        "brand": {
+            "name": "Leopard",
+            "description": "Take the first step towards a healthier, stronger you with our unbeatable pricing plans. Let's sweat, achieve, and conquer together!"
+        },
+        "contact": {
+            "title": "Contact",
+            "items": [
+                "Contact Us",
+                "Privacy Policy",
+                "Terms & Conditions",
+                "BMI Calculator"
+            ]
+        },
+        "links": {
+            "title": "Links",
+            "items": [
+                "Home",
+                "Program",
+                "Service",
+                "About",
+                "Community"
+            ]
+        },
+        "feedback": {
+            "title": "Feedback",
+            "description": "I hope to write your opinion and get your feedback",
+            "placeholder": "Enter Your Feedback",
+            "button": "Send"
+        },
+        "copyright": "Copyright © 2024 Ahmed Yahya. OnlineTraining"
+    }
+}
