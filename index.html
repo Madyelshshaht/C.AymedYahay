@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="css/all.min.css">
@@ -14,20 +16,22 @@
 
 <body>
 
-  <nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top">
+  <nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#" style="--i:1;">Leopard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
       </button>
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas py-2  offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <a class="navbar-brand" href="#" style="--i:1;">Leopard</a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-              class="fa-solid iconf fa-x"></i></button>
+          <button type="button" class="btnclose" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-solid iconf fa-x"></i>
+          </button>
         </div>
-        <div class="offcanvas-body d-lg-flex justify-gl-content-between  align-lg-items-center gap-3">
+        <div class="offcanvas-body   d-lg-flex justify-gl-content-between align-lg-items-center gap-3">
           <ul class="navbar-nav justify-content-end flex-grow-1 gap-lg-5 pe-3 mt-1">
             <li class="nav-item">
               <a id="nav_Home" class="nav-link active" aria-current="page" href="#Home" style="--i:2;">Home</a>
@@ -48,17 +52,23 @@
           </ul>
 
 
-          <select class="langs" name="langs" id="langs" style="--i:7;">
-            <option value="en" selected>English</option>
-            <option value="ar">العربية</option>
-          </select>
+          <div class="languages d-flex align-items-center gap-1 " id="languages" style="--i:7;">
+
+            <select class="langs " name="langs" id="langs">
+              <option value="en" selected>English</option>
+              <option value="ar">العربية</option>
+            </select>
+            <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+
+          </div>
+
 
         </div>
       </div>
     </div>
   </nav>
 
-  <header class="section__container header__container container py-5 overflow-sm-hidden" id="Home" >
+  <header class="section__container header__container container py-5 overflow-sm-hidden " id="Home">
     <div class="header__content pt-sm-5">
       <span class="bg__blur header__blur1"></span>
       <span class="bg__blur header__blur2"></span>
@@ -74,9 +84,9 @@
         </span>
       </div>
 
-      <h2><span class="name multiple-text fw-bold"></span></h2>
+      <h2><span class="name multiple-text fw-bold" id="cname"></span></h2>
 
-      <p id="header_description">
+      <p id="header_description" class="pt-1">
         Unleash your potential and embark on a journey towards a stronger,
         fitter, and more confident you. Sign up for Make Your Body Shape now
         and witness the incredible transformation your body is capable of!
@@ -92,15 +102,16 @@
       <button class="btn mt-4" id="header_button">Get Started</button>
     </div>
 
-    <div class="header__image pb-5 ">
-      <!-- <img class="img-fluid" src="assets/Captin2.png" alt="header" /> -->
-      <img class="img-fluid" src="assets/c.a2234.png" alt="header" />
+    <div class="header__image overflow-sm-hidden pb-5 ">
+      <img class="img-fluid" src="assets/Captin2.png" alt="header" />
+      <!-- <img class="img-fluid" src="assets/c.ahmed12.png" alt="header" /> -->
+      <!-- <img class="img-fluid" src="assets/c.a2234.png" alt="header" /> -->
     </div>
   </header>
 
   <!-- Certificate -->
 
-  <div class="certifcate container pt-5">
+  <div class="certifcate container pt-5 " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 ">
         <img class="img-fluid" src="assets/certficate.png" alt="">
@@ -116,9 +127,10 @@
   </div>
 
 
-  <section class="section__container explore__container overflow-hidden" id="Program">
+  <section class="section__container explore__container overflow-hidden mb-5" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" id="Program">
 
-    <div class="explore__header pt-5">
+    <div class="explore__header ">
       <h2 class="section__header w-100 pt-5 pb-5" id="Eplore_title">EXPLORE OUR PROGRAM</h2>
     </div>
     <div class="container swiper mySwiper">
@@ -176,13 +188,13 @@
   </section>
 
 
-  <section class="section__container class__container" id="Service">
-    <div class="class__image ">
-      <span class="bg__blur"></span>
+  <section class="section__container class__container mt-5 overflow-hidden " id="Service">
+    <div class="class__image " data-aos="fade-down-right">
+      <!-- <span class="bg__blur"></span> -->
       <img src="assets/gym/6.jpg" alt="class" class="class__img-1" />
       <img src="assets/gym/4.jpg" alt="class" class="class__img-2" />
     </div>
-    <div class="class__content">
+    <div class="class__content" data-aos="fade-down-left">
       <h2 class="section__header pb-3" id="class_title">THE CLASS YOU WILL GET HERE</h2>
       <p id="class_desc">
         Led by our team of expert and motivational instructors, "The Class You
@@ -196,7 +208,8 @@
     </div>
   </section>
 
-  <section class="section__container join__container " id="About">
+  <section class="section__container join__container " id="About" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
     <h2 class="section__header" id="join_title">? WHY JOIN US </h2>
     <p class="section__subheader" id="join_subtitle">
       Our diverse membership base creates a friendly and supportive
@@ -209,22 +222,22 @@
         <div class="join__card">
           <span><i class="ri-user-star-fill"></i></span>
           <div class="join__card__content">
-            <h4>Personal Trainer</h4>
-            <p>Unlock your potential with our expert Personal Trainers.</p>
+            <h4 id="join_title1">Personal Trainer</h4>
+            <p id="join_desc1">Unlock your potential with our expert Personal Trainers.</p>
           </div>
         </div>
         <div class="join__card">
           <span><i class="ri-vidicon-fill"></i></span>
           <div class="join__card__content">
-            <h4>Practice Sessions</h4>
-            <p>Elevate your fitness with practice sessions.</p>
+            <h4 id="join_title2">Practice Sessions</h4>
+            <p id="join_desc2">Elevate your fitness with practice sessions.</p>
           </div>
         </div>
         <div class="join__card">
           <span><i class="ri-building-line"></i></span>
           <div class="join__card__content">
-            <h4>Good Management</h4>
-            <p>Supportive management, for your fitness success.</p>
+            <h4 id="join_title3">Good Management</h4>
+            <p id="join_desc3">Supportive management, for your fitness success.</p>
           </div>
         </div>
       </div>
@@ -232,9 +245,9 @@
   </section>
 
 
-  <div class="myWork container  pt-5">
+  <div class="myWork container  pt-5 pb-5" data-aos="fade-up">
     <!-- <h1 class="text-center text-white pt-5">My Works</h1> -->
-    <h1 class="text-center text-white pt-5 pb-1" id="work_title">Before & After</h1>
+    <h1 class="text-center text-white text-uppercase pt-5 pb-1" id="work_title">Before & After</h1>
     <!-- <h2 class="text-center text-white pt-2 pb-2"> Transformations that speak louder than words </h2> -->
     <div class="subtitle d-flex justify-content-center align-items-center">
       <h2 class="text-center text-white pt-2 pb-2" id="work_sub_title"> Every body tells a story — here are ours </h2>
@@ -251,7 +264,7 @@
         <div class="swiper mySwiperworks1">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="assets/works/SaadB_Face.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/works/Saad_Back B.jpg" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/works/Saad_Back B.jpg" alt=""></div> -->
             <div class="swiper-slide"><img src="assets/works/Saad After 2.jpg" alt=""></div>
             <div class="swiper-slide"><img src="assets/works/Saad After 3.jpg" alt=""></div>
 
@@ -264,8 +277,8 @@
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
         <div class="swiper mySwiperworks1">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/works/aboAlaaB.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/works/AboAllB Back.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/aboAlaaB blur.jpg" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/works/AboAllB Back.jpg" alt=""></div> -->
             <div class="swiper-slide"><img src="assets/works/AboAll after.jpg" alt=""></div>
             <div class="swiper-slide"><img src="assets/works/Abo All After Back.jpg" alt=""></div>
           </div>
@@ -303,8 +316,8 @@
         <div class="swiper mySwiperworks1">
           <div class="swiper-wrapper ">
             <div class="swiper-slide"><img src="assets/works/person_face.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/works/person_back.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/works/person_side.jpg" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/works/person_back.jpg" alt=""></div> -->
+            <!-- <div class="swiper-slide"><img src="assets/works/person_side.jpg" alt=""></div> -->
             <div class="swiper-slide"><img src="assets/works/person_after.jpg" alt=""></div>
           </div>
           <div class="swiper-pagination "></div>
@@ -327,7 +340,7 @@
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
         <div class="swiper mySwiperworks1">
           <div class="swiper-wrapper ">
-            <div class="swiper-slide"><img src="assets/works/w1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/works/w112.jpg" alt=""></div>
             <div class="swiper-slide"><img src="assets/works/w2.jpg" alt=""></div>
           </div>
           <div class="swiper-pagination "></div>
@@ -339,7 +352,8 @@
   </div>
 
 
-  <section class="section__container price__container">
+  <section class="section__container price__container pt-5 pb-5" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
     <h2 class="section__header" id="price_title">OUR PRICING PLAN</h2>
     <p class="section__subheader" id="price_desc">
       Our pricing plan comes with various membership tiers, each tailored to
@@ -410,14 +424,11 @@
     </div>
   </section>
 
-  <!-- <section class="review swiper mySwipercomments p-0 overflow-hidden" id="Comunnity">
-    <div class="swiper-wrapper">
+  <section class="review swiper mySwipercomments py-5  overflow-hidden" id="Comunnity">
+    <h1 class="text-white text-center mt-5 pb-5 text-uppercase">Member review</h1>
+    <div class="swiper-wrapper" id="reviews-container">
 
-      <div class="section__container review__container  swiper-slide">
-        <span>
-          <i class="ri-double-quotes-r"></i>
-        </span>
-
+      <!-- <div class="section__container review__container  swiper-slide" >
         <div class="review__content">
           <h4>MEMBER REVIEW</h4>
           <p>
@@ -440,41 +451,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="section__container review__container  swiper-slide">
-        <span><i class="ri-double-quotes-r"></i></span>
-
-        <div class="review__content">
-          <h4>MEMBER REVIEW</h4>
-          <p>
-            What truly sets this gym apart is their expert team of trainers. The
-            trainers are knowledgeable, approachable, and genuinely invested in
-            helping members achieve their fitness goals. They take the time to
-            understand individual needs and create personalized workout plans,
-            ensuring maximum results and safety.
-          </p>
-          <div class="review__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-half-fill"></i></span>
-          </div>
-          <div class="review__footer">
-            <div class="review__member">
-              <img src="assets/member.jpg" alt="member" />
-              <div class="review__member__details">
-                <h4>Jane Cooper</h4>
-                <p>Software Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section__container review__container  swiper-slide">
-        <span><i class="ri-double-quotes-r"></i></span>
+      <!-- <div class="section__container review__container  swiper-slide">
 
         <div class="review__content">
           <h4>MEMBER REVIEW</h4>
@@ -502,43 +481,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="section__container review__container swiper-slide">
-        <span><i class="ri-double-quotes-r"></i></span>
-
-        <div class="review__content">
-          <h4>MEMBER REVIEW</h4>
-          <p>
-            What truly sets this gym apart is their expert team of trainers. The
-            trainers are knowledgeable, approachable, and genuinely invested in
-            helping members achieve their fitness goals. They take the time to
-            understand individual needs and create personalized workout plans,
-            ensuring maximum results and safety.
-          </p>
-          <div class="review__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-half-fill"></i></span>
-          </div>
-          <div class="review__footer">
-            <div class="review__member">
-              <img src="assets/member.jpg" alt="member" />
-              <div class="review__member__details">
-                <h4>Jane Cooper</h4>
-                <p>Software Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
-  </section> -->
+  </section>
 
-  <footer class="section__container footer__container p-5 overflow-sm-hidden">
+  <footer class="section__container footer__container   p-5 overflow-sm-hidden">
     <span class="bg__blur footer__blur1"></span>
     <span class="bg__blur footer__blur2"></span>
     <div class="footer__row row ">
@@ -626,6 +575,18 @@
   <script src="gym.js"></script>
   <script src="js/all.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // offset: '50%',  
+      duration: 1000,
+      easing: 'ease-out',
+      once: false,
+      mirror: false,
+      debounceDelay: 50,
+    });
+  </script>
+
 </body>
 
 </html>

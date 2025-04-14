@@ -27,6 +27,7 @@
 .navbar {
   width: 100%;
   background-color: var(--primary-color) !important;
+  box-shadow: 0px 0px 15px var(--secondary-color-dark);
 }
 
 .navbar .navbar-brand {
@@ -62,18 +63,50 @@
   color: white;
 }
 
-.offcanvas-body .langs {
-  background: transparent;
+.offcanvas .offcanvas-header .btnclose {
+  background-color: transparent;
   border: none;
+  outline: none;
   color: white;
-  font-weight: 500;
-  margin-top: 4px;
-  /* width: 100px; */
+}
+
+.offcanvas .offcanvas-header .btnclose:focus {
+  outline: none;
+  border: none;
+}
+
+.offcanvas-body .languages {
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
   opacity: 0;
   cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 5px;
 }
+
+.offcanvas-body .langs {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  /* animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0; */
+  cursor: pointer;
+  width: 80px;
+}
+
+.navbar .en-nav {
+  margin-left: 12px;
+}
+
+.navbar .ar-nav {
+  margin-right: -25px;
+}
+
 
 .offcanvas-body .langs:focus {
   outline: orange;
@@ -81,11 +114,12 @@
 
 .offcanvas-body .langs option {
   background-color: var(--primary-color-light);
+  padding: 5px;
+  text-align: center;
 }
 
-.navbar .en-nav {
-  margin-left: 12px;
-}
+
+
 
 /* offcanvas-body */
 .nav-item {
@@ -291,6 +325,7 @@ body {
   /* margin-bottom: -20px; */
 }
 
+
 /* .header__content h1 {
   margin-bottom: 1rem;
   font-size: 5rem;
@@ -338,8 +373,9 @@ body {
 
 .header__image img {
   /* 430px */
-  max-width: 500px;
+  max-width: 380px;
   margin: auto;
+  /* filter: drop-shadow(0px 0px 5px #cccccc); */
 
 }
 
@@ -611,19 +647,55 @@ body {
 }
 
 .review {
-  background-color: var(--primary-color-light);
+  background-color: var(--primary-color-light) !important;
 }
 
 
-.swiper {
+.review .swiper {
   width: 100%;
 
 }
 
-.swiper-slide {
+.review .swiper-slide {
   background-position: center;
   background-size: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  animation: rotateGlow 4s linear infinite;
 }
+
+
+
+/* .review .swiper-wrapper:hover > :not(:hover){
+  opacity: 0.5;
+  filter: blur(10px);
+  transform: scale(0.8);
+  animation-play-state: paused;
+} */
+
+/* @keyframes rotateGlow {
+  0% {
+    box-shadow: 10px 0 30px rgba(255, 255, 255, 0.5),
+                inset 10px 0 20px var(--secondary-color);
+  }
+  25% {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5),
+                inset 0 10px 20px var(--secondary-color);
+  }
+  50% {
+    box-shadow: -10px 0 30px rgba(255, 255, 255, 0.5),
+                inset -10px 0 20px var(--secondary-color);
+  }
+  75% {
+    box-shadow: 0 -10px 30px rgba(255, 255, 255, 0.5),
+                inset 0 -10px 20px var(--secondary-color);
+  }
+  100% {
+    box-shadow: 10px 0 30px rgba(255, 255, 255, 0.5),
+                inset 10px 0 20px var(--secondary-color);
+  }
+} */
+
 
 
 .review__container {
@@ -631,11 +703,11 @@ body {
   gap: 2rem;
 }
 
-.review__container>span {
+/* .review__container>span {
   font-size: 6rem;
   color: var(--secondary-color);
   opacity: 0.5;
-}
+} */
 
 .review__content {
   flex: 1;
@@ -856,10 +928,32 @@ body {
 }
 
 
+@media (width < 1030px) {
+  .footer__container .feedback-email {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    width: 80%;
+    font-size: 15px;
+  }
 
+  .footer__container .feedback-btn {
+    padding: 4px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+
+  }
+}
 
 
 @media (width < 900px) {
+
+
+  .offcanvas-body .languages {
+    margin-left: -20px;
+  }
+
+
   .nav__links {
     display: none;
   }
@@ -870,7 +964,10 @@ body {
 
   .header__image {
     grid-area: 1/1/2/2;
+    max-width: 350px;
+    margin: auto;
   }
+
 
   .explore__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1007,6 +1104,19 @@ body {
 
 
 @media screen and (max-width: 400px) {
+
+  .header__image img {
+    /* 430px */
+    max-width: 320px;
+    margin: auto;
+
+  }
+
+  .offcanvas {
+    width: 250px !important;
+    height: 350px;
+  }
+
   .header__content h1 span {
     font-size: 60px;
   }
@@ -1039,7 +1149,7 @@ body {
   }
 
   .certifcate .content p {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 10px;
   }
 
@@ -1059,8 +1169,16 @@ body {
 }
 
 @media screen and (max-width: 350px) {
+
+  .header__image img {
+    /* 430px */
+    max-width: 280px;
+    margin: auto;
+
+  }
+
   .certifcate .content p {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 10px;
   }
 
