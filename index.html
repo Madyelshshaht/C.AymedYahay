@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-  <title>Ahmed Yahya</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <title>C.Ahmed Yahya</title>
 </head>
 
 <body>
@@ -68,7 +72,8 @@
     </div>
   </nav>
 
-  <header class="section__container header__container container py-5 overflow-sm-hidden " id="Home">
+  <!-- Hero -->
+  <header class="section__container header__container container py-5 overflow-sm-hidden" id="Home">
     <div class="header__content pt-sm-5">
       <span class="bg__blur header__blur1"></span>
       <span class="bg__blur header__blur2"></span>
@@ -102,7 +107,14 @@
         <a href="https://wa.me/+2001032329424" target="_blank" style="--i:10"><i class="ri-whatsapp-fill"></i></a>
       </div>
 
-      <button class="btn mt-4" id="header_button">Get Started</button>
+      <!-- <button class="btn mt-4" id="header_button">Get Started</button> -->
+      <div class="counter mt-4 d-flex flex-column justify-content-center align-items-start ">
+        <p class="mb-0 fw-bold" id="get_offer">Get Offer Now</h6>
+        <div class="fs-1 fw-bold countdown" id="countdown">05:00:00</div>
+        <button class="btn mt-2" id="header_button">
+          To Subscripe 
+        </button>
+      </div>
     </div>
 
     <div class="header__image overflow-sm-hidden pb-5 ">
@@ -110,10 +122,17 @@
       <!-- <img class="img-fluid" src="assets/c.ahmed12.png" alt="header" /> -->
       <!-- <img class="img-fluid" src="assets/c.a2234.png" alt="header" /> -->
     </div>
+
+    <!-- <div class="counter">
+      <p class="mb-0">Get Offer</h6>
+      <div class="countdown" id="countdown">05:00:00</div>
+      <button class="btn mt-2">
+        Subscripe Now
+      </button>
+    </div> -->
   </header>
 
   <!-- Certificate -->
-
   <div class="certifcate container pt-5 " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 ">
@@ -129,7 +148,7 @@
     </div>
   </div>
 
-
+  <!-- explore -->
   <section class="section__container explore__container overflow-hidden mb-5" data-aos="fade-up"
     data-aos-anchor-placement="center-bottom" id="Program">
 
@@ -190,7 +209,7 @@
 
   </section>
 
-
+  <!-- Class -->
   <section class="section__container class__container mt-5 overflow-hidden " id="Service">
     <div class="class__image " data-aos="fade-down-right">
       <!-- <span class="bg__blur"></span> -->
@@ -211,6 +230,7 @@
     </div>
   </section>
 
+  <!-- Why-Join -->
   <section class="section__container join__container " id="About" data-aos="fade-up"
     data-aos-anchor-placement="center-bottom">
     <h2 class="section__header" id="join_title">? WHY JOIN US </h2>
@@ -247,8 +267,8 @@
     </div>
   </section>
 
-
-  <div class="myWork container  pt-5 pb-5" data-aos="fade-up">
+  <!-- myWork -->
+  <div class="myWork container  pt-5 pb-5 mb-5" data-aos="fade-up">
     <!-- <h1 class="text-center text-white pt-5">My Works</h1> -->
     <h1 class="text-center text-white text-uppercase pt-5 pb-1" id="work_title">Before & After</h1>
     <!-- <h2 class="text-center text-white pt-2 pb-2"> Transformations that speak louder than words </h2> -->
@@ -274,7 +294,7 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3"> 90 Days </h2>
+        <h2 class="text-white text-center pt-3" id="person1"> 90 Days </h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -288,7 +308,7 @@
           <div class="swiper-pagination "></div>
 
         </div>
-        <h2 class="text-white text-center pt-3">120 Days</h2>
+        <h2 class="text-white text-center pt-3" id="person2">120 Days</h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -300,7 +320,7 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3">40 Days</h2>
+        <h2 class="text-white text-center pt-3" id="person3">40 Days</h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -312,7 +332,7 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3">90 Days</h2>
+        <h2 class="text-white text-center pt-3" id="person4">90 Days</h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -324,7 +344,7 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3">90 Days</h2>
+        <h2 class="text-white text-center pt-3" id="person5">90 Days</h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -336,7 +356,7 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3">70 Days</h2>
+        <h2 class="text-white text-center pt-3" id="person6">70 Days</h2>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12  p-4">
@@ -347,23 +367,25 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
-        <h2 class="text-white text-center pt-3"> 6 Months </h2>
-        <h2 class="text-white text-center ">Difference 68Kg</h2>
+        <h2 class="text-white text-center pt-3" id="person7"> 6 Months </h2>
+        <h2 class="text-white text-center " id="differ">Difference 68Kg</h2>
       </div>
 
     </div>
   </div>
 
-
-  <section class="section__container price__container pt-5 pb-5" data-aos="fade-up"
+  <!-- Price  -->
+  <section class="section__container price__container  pt-5 pb-5" data-aos="fade-up"
     data-aos-anchor-placement="center-bottom">
     <h2 class="section__header" id="price_title">OUR PRICING PLAN</h2>
     <p class="section__subheader" id="price_desc">
       Our pricing plan comes with various membership tiers, each tailored to
       cater to different preferences and fitness aspirations.
     </p>
-    <div class="price__grid">
-      <div class="price__card">
+    <div class="price__grid ">
+
+
+      <div class="price__card ">
         <div class="price__card__content">
           <h4 id="plan_id1">Basic Plan</h4>
           <h3 id="plan_price1">$16</h3>
@@ -376,8 +398,9 @@
             <p id="plan_feature12"> At home workouts </p>
           </span>
         </div>
-        <button class="btn price__btn" id="plan_btn1">Join Now</button>
+        <a href="./Plans/Basic.html" class="btn price__btn" id="plan_btn1">Join Now</a>
       </div>
+
       <div class="price__card">
         <div class="price__card__content">
           <h4 id="plan_id2">Gold Plan</h4>
@@ -395,8 +418,9 @@
             <p id="plan_feature23">At home workouts</p>
           </span>
         </div>
-        <button class="btn price__btn" id="plan_btn2">Join Now</button>
+        <a href="./Plans/Gold.html" class="btn price__btn" id="plan_btn2">Join Now</a>
       </div>
+
       <div class="price__card">
         <div class="price__card__content">
           <h4 id="plan_id3">VIP Plan</h4>
@@ -422,41 +446,18 @@
             <p id="plan_feature35"> Personal Training</p>
           </span>
         </div>
-        <button class="btn price__btn" id="plan_btn3">Join Now</button>
+        <a href="./Plans/VIP.html" class="btn price__btn" id="plan_btn3">Join Now</a>
+
       </div>
     </div>
   </section>
 
-  <section class="review swiper mySwipercomments py-5  overflow-hidden" id="Comunnity">
-    <h1 class="text-white text-center mt-5 pb-5 text-uppercase">Member review</h1>
+  <!-- review -->
+  <section class="review swiper mySwipercomments mt-3  py-5 mb-5  overflow-hidden" id="Comunnity" data-aos="fade-up">
+    <h1 class="text-white text-center mt-5 pb-5 text-uppercase" id="Member_review">Member review</h1>
     <div class="swiper-wrapper" id="reviews-container">
 
-      <!-- <div class="section__container review__container  swiper-slide" >
-        <div class="review__content">
-          <h4>MEMBER REVIEW</h4>
-          <p>
-            عاش ي كوتش مشاء الله وصلت للجسم المناسب ف اسرع وقت
-          </p>
-          <div class="review__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-line"></i></span>
-          </div>
-          <div class="review__footer">
-            <div class="review__member">
-              <img src="assets/download (2).jpeg" alt="member" />
-              <div class="review__member__details">
-                <h4>محمد الشحات</h4>
-                <p>Software Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="section__container review__container  swiper-slide">
+      <!-- <div class="section__container review__container  swiper-slide ">
 
         <div class="review__content">
           <h4>MEMBER REVIEW</h4>
@@ -486,11 +487,36 @@
         </div>
       </div> -->
 
-
     </div>
   </section>
 
-  <footer class="section__container footer__container   p-5 overflow-sm-hidden">
+  <!-- Calories -->
+  <div class="Calories container mt-5 mb-5 pt-5 pb-5 overflow-hidden ">
+
+    <h1 class="text-white text-center mt-5 text-uppercase pb-5" id="calo_title">Calories Calculator</h1>
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-6" data-aos="fade-down-right">
+        <lottie-player src="./lotifiles/Animation - 1745068173945.json" background="transparent" speed="1" loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="content col-lg-6 d-flex flex-column justify-content-center mt-sm-5" data-aos="fade-down-left">
+        <h5 class="text-white" id="calo_subTitle">Discover Your Daily Caloric Needs</h3>
+          <p class="mt-4 text-white-50" id="calo_desc">
+            Calculate your personalized daily calorie requirements based on your gender, weight, height, and age.
+            Get accurate results to help you maintain, lose, or gain weight according to your health goals.
+          </p>
+          <div class="button  mt-5">
+            <a href="./Calories/Calories.html" class="btn btn-secondary" id="calo_btn">Calculate Calories</a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+  <!-- Footer -->
+  <footer class="section__container footer__container mt-5  p-5 overflow-sm-hidden">
     <span class="bg__blur footer__blur1"></span>
     <span class="bg__blur footer__blur2"></span>
     <div class="footer__row row ">
@@ -561,8 +587,11 @@
         <p class="text-white" id="footer_feedback_desc">I hope to write your opinion and get your feedback</p>
         <div class="email d-flex  align-items-center gap-2">
           <input type="text" placeholder="Enter Your FeedBack" class="feedback-email" id="footer_feedback_input" />
-          <button class="feedback-btn  btn-outline-success fw-bold" id="footer_feedback_button">Send</button>
+          <button class="feedback-btn  btn-outline-success fw-bold" id="footer_feedback_button"
+            onclick="validateFeedback()">Send</button>
+
         </div>
+        <p id="feedback_error" style="color:red;"></p>
       </div>
     </div>
 
@@ -579,12 +608,12 @@
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
   <script src="gym.js"></script>
-  <script src="js/all.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      // offset: '50%',  
+      // offset: '100%',  
       duration: 1000,
       easing: 'ease-out',
       once: false,

@@ -14,7 +14,9 @@ const CaptinName = document.getElementById('cname');
 const headerTitle = document.getElementById("header_title");
 const headerCoach = document.getElementById("header_coach");
 const headerDescription = document.getElementById("header_description");
+const get_offer = document.getElementById("get_offer");
 const headerButton = document.getElementById("header_button");
+
 
 // Explore
 
@@ -248,7 +250,7 @@ function initializeTyped(lang) {
 }
 
 
-// Scroll
+// Scroll NavBar Style
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 100) {
         navbar.style.boxShadow = '0 2px 10px #f9ac54';
@@ -392,7 +394,9 @@ const fetchPage = (lang) => {
             headerTitle.textContent = data.header_title;
             headerCoach.textContent = data.header_coach;
             headerDescription.textContent = data.header_description;
+            get_offer.innerHTML = data.Get_Offer;
             headerButton.textContent = data.header_button;
+
 
             // Explore
             Eplore_title.textContent = data.Eplore_title;
@@ -416,13 +420,11 @@ const fetchPage = (lang) => {
 
 
             // Class
-
             class_title.innerHTML = data.class_section.title;
             class_desc.innerHTML = data.class_section.description;
             class_btn.innerHTML = data.class_section.btn;
 
             // Join
-
             join_title.innerHTML = data.why_join_us.title;
             join_subtitle.innerHTML = data.why_join_us.subtitle;
 
@@ -439,7 +441,6 @@ const fetchPage = (lang) => {
             // Price
             price_title.innerHTML = data.pricing.title;
             price_desc.innerHTML = data.pricing.description;
-
 
             plan_id1.innerHTML = data.pricing.plans[0].name;
             plan_price1.innerHTML = data.pricing.plans[0].price;
@@ -472,12 +473,33 @@ const fetchPage = (lang) => {
             work_sub_title.innerHTML = data.work.hook;
             work_desc.innerHTML = data.work.description;
 
-            // Reviwers
+            const person1 = document.getElementById('person1');
+            const person2 = document.getElementById('person2');
+            const person3 = document.getElementById('person3');
+            const person4 = document.getElementById('person4');
+            const person5 = document.getElementById('person5');
+            const person6 = document.getElementById('person6');
+            const person7 = document.getElementById('person7');
+            const differ = document.getElementById('differ');
 
-            const reviews = data.reviews; 
+            person1.innerHTML = data.work.persons[0].person1;
+            person2.innerHTML = data.work.persons[1].person2;
+            person3.innerHTML = data.work.persons[2].person3;
+            person4.innerHTML = data.work.persons[3].person4;
+            person5.innerHTML = data.work.persons[4].person5;
+            person6.innerHTML = data.work.persons[5].person6;
+            person7.innerHTML = data.work.persons[6].person7;
+            differ.innerHTML = data.work.persons[6].differ;
+
+            // Reviwers
+            const Member_review = document.getElementById('Member_review');
+
+            const reviews = data.Member_reviews.reviews;
             const randomReviews = shuffleArray(reviews).slice(0, 5);
             const container = document.getElementById('reviews-container');
 
+
+            Member_review.innerHTML = data.Member_reviews.review_title;
             randomReviews.map(review => {
                 container.innerHTML += `
                 <div class="section__container review__container  swiper-slide">
@@ -498,6 +520,17 @@ const fetchPage = (lang) => {
                 </div>
                 `;
             });
+
+            // Calories
+            const calo_title = document.getElementById('calo_title');
+            const calo_subTitle = document.getElementById('calo_subTitle');
+            const calo_desc = document.getElementById('calo_desc');
+            const calo_btn = document.getElementById('calo_btn');
+
+            calo_title.innerHTML = data.Calories.title;
+            calo_subTitle.innerHTML = data.Calories.subtitle;
+            calo_desc.innerHTML = data.Calories.description;
+            calo_btn.innerHTML = data.Calories.buttonText;
 
 
             // footer 
@@ -534,3 +567,67 @@ const fetchPage = (lang) => {
 
         });
 }
+
+
+function validateFeedback() {
+    const input = document.getElementById("footer_feedback_input").value.trim();
+    const error = document.getElementById("feedback_error");
+
+    // Regex: 10 to 300 characters, letters, numbers, spaces, and punctuation
+    const regex = /^[\w\s.,!?'"()\-]{3,300}$/;
+
+    if (!regex.test(input)) {
+        error.textContent = "Please enter valid feedback (characters).";
+    } else {
+        error.textContent = "";
+        alert("Feedback submitted successfully!");
+
+    }
+}
+
+
+// Set countdown for 5 hours from now
+const countdownElement = document.getElementById("countdown");
+
+const setNewEndTime = () => {
+    const newEndTime = new Date().getTime() + 5 * 60 * 60 * 1000;
+    localStorage.setItem("countdownEndTime", newEndTime);
+    return newEndTime;
+};
+
+let endTime = parseInt(localStorage.getItem("countdownEndTime"));
+
+if (!endTime || endTime <= new Date().getTime()) {
+    endTime = setNewEndTime();
+}
+
+const updateCountdown = () => {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+
+    if (distance <= 0) {
+        countdownElement.innerHTML = "انتهى العرض!";
+        clearInterval(interval);
+
+        // Reset countdown after it ends
+        setTimeout(() => {
+            endTime = setNewEndTime();
+            interval = setInterval(updateCountdown, 1000);
+            updateCountdown();
+        }, 1000);
+
+        return;
+    }
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownElement.innerHTML =
+        String(hours).padStart(2, "0") + ":" +
+        String(minutes).padStart(2, "0") + ":" +
+        String(seconds).padStart(2, "0");
+};
+
+let interval = setInterval(updateCountdown, 1000);
+updateCountdown();

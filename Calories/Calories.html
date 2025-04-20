@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Calories.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+
+    <title>Calories Calculator</title>
+</head>
+
+<body>
+    <div class="calculator container m-2 ">
+        <span class="bg__blur header__blur1"></span>
+        <span class="bg__blur header__blur2"></span>
+        <div class="row  p-3">
+            <div class="col-12">
+                <h2>حاسبة السعرات الحرارية</h2>
+
+                <label>الجنس:</label>
+                <select id="gender">
+                    <option value="male" selected>رجل</option>
+                    <option value="female">امرأة</option>
+                </select>
+        
+                <label>الوزن (كجم):</label>
+                <input type="number" id="weight" placeholder="مثلاً: 70" />
+        
+                <label>الطول (سم):</label>
+                <input type="number" id="height" placeholder="مثلاً: 170" />
+        
+                <label>العمر (بالسنوات):</label>
+                <input type="number" id="age" placeholder="مثلاً: 25" />
+        
+                <label>مستوى النشاط:</label>
+                <select id="activity">
+                    <option value="1.2" selected>خامل (بدون رياضة)</option>
+                    <option value="1.375">نشاط خفيف (1-3 أيام/أسبوع)</option>
+                    <option value="1.55">نشاط متوسط (3-5 أيام/أسبوع)</option>
+                    <option value="1.725">نشاط عالي (6-7 أيام/أسبوع)</option>
+                    <option value="1.9">نشاط شديد جدًا</option>
+                </select>
+        
+                <button onclick="calculateCalories()">احسب السعرات</button>
+                <div id="result" class="text-white"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="Calories.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

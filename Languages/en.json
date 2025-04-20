@@ -8,7 +8,8 @@
     "header_title": "Best Fitness in the Town",
     "header_coach": "Coach",
     "header_description": "Unleash your potential and embark on a journey towards a stronger, fitter, and more confident you. Sign up for Make Your Body Shape now and witness the incredible transformation your body is capable of!",
-    "header_button": "Get Started",
+    "Get_Offer": "Get Offer Now",
+    "header_button": "To Subscripe",
     "Eplore": "Explore ////////////////////////////////////////////",
     "Eplore_title": "EXPLORE OUR PROGRAM",
     "Eplore_programs": [
@@ -126,80 +127,113 @@
     "work": {
         "title": "Before & After",
         "hook": "Every body tells a story — here are ours",
-        "description": "Here’s a glimpse of the real impact — these are actual results from clients who committed to their fitness journey. With the right guidance, consistency, and personalized plans, achieving your dream physique isn't just possible — it's inevitable. See the difference for yourself."
+        "description": "Here’s a glimpse of the real impact — these are actual results from clients who committed to their fitness journey. With the right guidance, consistency, and personalized plans, achieving your dream physique isn't just possible — it's inevitable. See the difference for yourself.",
+        "persons": [
+            {
+                "person1": "90 Days"
+            },
+            {
+                "person2": "120 Days"
+            },
+            {
+                "person3": "40 Days"
+            },
+            {
+                "person4": "90 Days"
+            },
+            {
+                "person5": "90 Days"
+            },
+            {
+                "person6": "70 Days"
+            },
+            {
+                "person7": "6 Monthes",
+                "differ": "Difference 68Kg"
+            }
+        ]
     },
-    "reviews": [
-        {
-            "name": "Mohamed Elshahat",
-            "role": "SoftWare Engineer",
-            "text": "The trainer here is truly amazing. he push you to be your best!",
-            "rating": 5,
-            "img": "/assets/member.jpg"
-        },
-        {
-            "name": "Mark Thompson",
-            "role": "Gym Member",
-            "text": "Love the personalized plans they offer. I've seen real progress.",
-            "rating": 4.5,
-            "img": "https://i.pravatar.cc/100?img=2"
-        },
-        {
-            "name": "Lara Smith",
-            "role": "Yoga Practitioner",
-            "text": "Very clean gym with great equipment and even better staff!",
-            "rating": 4,
-            "img": "https://i.pravatar.cc/100?img=3"
-        },
-        {
-            "name": "Tom Hanks",
-            "role": "Bodybuilder",
-            "text": "Helpful and encouraging trainers. Highly recommended!",
-            "rating": 5,
-            "img": "https://i.pravatar.cc/100?img=4"
-        },
-        {
-            "name": "Sara Parker",
-            "role": "Runner",
-            "text": "My favorite gym in the city. Amazing team and community.",
-            "rating": 5,
-            "img": "https://i.pravatar.cc/100?img=5"
-        },
-        {
-            "name": "Jake Lee",
-            "role": "Student",
-            "text": "Trainers are knowledgeable and friendly, great experience!",
-            "rating": 4.5,
-            "img": "https://i.pravatar.cc/100?img=6"
-        },
-        {
-            "name": "Nina Patel",
-            "role": "Crossfit Athlete",
-            "text": "Equipment is modern and the atmosphere is motivating.",
-            "rating": 4,
-            "img": "https://i.pravatar.cc/100?img=7"
-        },
-        {
-            "name": "Chris Martin",
-            "role": "Cyclist",
-            "text": "Great results and fantastic support from the coaches!",
-            "rating": 5,
-            "img": "https://i.pravatar.cc/100?img=8"
-        },
-        {
-            "name": "Megan Davis",
-            "role": "Office Worker",
-            "text": "Flexible hours and welcoming environment. Love it!",
-            "rating": 4.5,
-            "img": "https://i.pravatar.cc/100?img=9"
-        },
-        {
-            "name": "Daniel King",
-            "role": "Athlete",
-            "text": "The staff truly care about your goals. 10/10!",
-            "rating": 5,
-            "img": "https://i.pravatar.cc/100?img=10"
-        }
-    ],
+    "Member_reviews": {
+        "review_title": "Member review",
+        "reviews": [
+            {
+                "name": "Mohamed Elshahat",
+                "role": "SoftWare Engineer",
+                "text": "The trainer here is truly amazing. he push you to be your best!",
+                "rating": 5,
+                "img": "/assets/member.jpg"
+            },
+            {
+                "name": "Mark Thompson",
+                "role": "Gym Member",
+                "text": "Love the personalized plans they offer. I've seen real progress.",
+                "rating": 4.5,
+                "img": "https://i.pravatar.cc/100?img=2"
+            },
+            {
+                "name": "Lara Smith",
+                "role": "Yoga Practitioner",
+                "text": "Very clean gym with great equipment and even better staff!",
+                "rating": 4,
+                "img": "https://i.pravatar.cc/100?img=3"
+            },
+            {
+                "name": "Tom Hanks",
+                "role": "Bodybuilder",
+                "text": "Helpful and encouraging trainers. Highly recommended!",
+                "rating": 5,
+                "img": "https://i.pravatar.cc/100?img=4"
+            },
+            {
+                "name": "Sara Parker",
+                "role": "Runner",
+                "text": "My favorite gym in the city. Amazing team and community.",
+                "rating": 5,
+                "img": "https://i.pravatar.cc/100?img=5"
+            },
+            {
+                "name": "Jake Lee",
+                "role": "Student",
+                "text": "Trainers are knowledgeable and friendly, great experience!",
+                "rating": 4.5,
+                "img": "https://i.pravatar.cc/100?img=6"
+            },
+            {
+                "name": "Nina Patel",
+                "role": "Crossfit Athlete",
+                "text": "Equipment is modern and the atmosphere is motivating.",
+                "rating": 4,
+                "img": "https://i.pravatar.cc/100?img=7"
+            },
+            {
+                "name": "Chris Martin",
+                "role": "Cyclist",
+                "text": "Great results and fantastic support from the coaches!",
+                "rating": 5,
+                "img": "https://i.pravatar.cc/100?img=8"
+            },
+            {
+                "name": "Megan Davis",
+                "role": "Office Worker",
+                "text": "Flexible hours and welcoming environment. Love it!",
+                "rating": 4.5,
+                "img": "https://i.pravatar.cc/100?img=9"
+            },
+            {
+                "name": "Daniel King",
+                "role": "Athlete",
+                "text": "The staff truly care about your goals. 10/10!",
+                "rating": 5,
+                "img": "https://i.pravatar.cc/100?img=10"
+            }
+        ]
+    },
+    "Calories": {
+        "title": "CALORIES CALCULATOR",
+        "subtitle": "Discover Your Daily Caloric Needs",
+        "description": "Calculate your personalized daily calorie requirements based on your gender, weight, height, and age. Get accurate results to help you maintain, lose, or gain weight according to your health goals.",
+        "buttonText": "Calculate Calories"
+    },
     "footer": {
         "brand": {
             "name": "Leopard",

@@ -23,6 +23,7 @@
 
 
 
+
 /* NavBar */
 .navbar {
   width: 100%;
@@ -90,7 +91,7 @@
   -moz-appearance: none;
   background: transparent;
   border: none;
-  color: white;
+  color: white !important;
   font-weight: 500;
   /* animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -215,6 +216,9 @@
   color: var(--white);
 }
 
+
+
+
 .section__subheader {
   max-width: 600px;
   margin: auto;
@@ -288,18 +292,6 @@ body {
   gap: 2rem;
 }
 
-/* .header__container::before {
-  content: "FITNESS";
-  position: absolute;
-  bottom: 50%;
-  left: 110px;
-  font-size: 7rem;
-  font-weight: 700;
-  line-height: 7rem;
-  color: var(--white) !important;
-  opacity: 0.05;
-  z-index: -1;
-} */
 
 .bg__blur {
   position: absolute;
@@ -582,6 +574,8 @@ body {
   gap: 2rem;
 }
 
+
+
 .price__card {
   padding: 3rem 2rem;
   display: flex;
@@ -602,11 +596,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.price__card__content span {
-  display: flex;
-  /* align-items: center; */
-  gap: 5px;
-}
 
 .price__card h4 {
   margin-bottom: 1rem;
@@ -624,26 +613,34 @@ body {
   border-bottom: 2px solid var(--white);
 }
 
-.price__card p {
+.price__card__content span {
+  display: flex;
+  /* align-items: center; */
+  gap: 5px;
+}
+
+.price__card .price__card__content span p {
   margin-bottom: 0.75rem;
   color: var(--white);
 }
 
-.price__card p i {
+.price__card .price__card__content span i {
   margin-right: 0.5rem;
   font-size: 1.2rem;
   color: var(--secondary-color);
 }
 
-.price__btn {
-  color: var(--secondary-color);
-  background-color: transparent;
-  border: 2px solid var(--secondary-color);
+.price__card .price__btn {
+  text-align: center;
+  padding: 10px 10px;
+  color: var(--secondary-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--secondary-color) !important;
 }
 
 .price__btn:hover {
-  color: var(--white);
-  background-color: var(--secondary-color);
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 
 .review {
@@ -958,6 +955,9 @@ body {
     display: none;
   }
 
+
+
+
   .header__container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1098,8 +1098,6 @@ body {
     border-radius: 10px;
   }
 
-
-
 }
 
 
@@ -1165,6 +1163,9 @@ body {
     font-size: 10px;
   }
 
+.Calories .content{
+  margin-top: 30px;
+}
 
 }
 
