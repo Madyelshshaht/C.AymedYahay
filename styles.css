@@ -1002,6 +1002,12 @@ body {
 }
 
 @media (width < 600px) {
+
+  .offcanvas {
+    width: 250px !important;
+    height: 370px;
+  }
+
   .explore__header {
     flex-direction: column;
   }
@@ -1112,7 +1118,7 @@ body {
 
   .offcanvas {
     width: 250px !important;
-    height: 350px;
+    height: 370px;
   }
 
   .header__content h1 span {
