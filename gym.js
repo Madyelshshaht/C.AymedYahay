@@ -631,3 +631,15 @@ const updateCountdown = () => {
 
 let interval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
+
+// Lotifiles
+document.addEventListener("DOMContentLoaded", function () {
+    lottie.loadAnimation({
+        container: document.getElementById("myLottie"),
+        renderer: "svg",           
+        loop: true,                
+        autoplay: true,          
+        path: "./lotifiles/calories.json" 
+    });
+});
